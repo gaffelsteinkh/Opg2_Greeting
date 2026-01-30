@@ -9,8 +9,7 @@ public class GreetingMessage
         string? name = Console.ReadLine();
         Console.WriteLine("\n");
 
-        //Console.WriteLine(day); just a test to se the format it printed out.
-        var time = DateTime.Now.ToString("HH:MM");
+        var time = DateTime.Now.ToString("HH:mm");
         var day = DateTime.Now.DayOfWeek;
         int hour = DateTime.Now.Hour;
 
