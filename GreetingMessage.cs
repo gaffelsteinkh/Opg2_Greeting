@@ -1,5 +1,7 @@
 
-public class TimeCheck
+using System.Dynamic;
+
+public class GreetingMessage
 {
     public static void Message()
     {
@@ -7,10 +9,11 @@ public class TimeCheck
         string? name = Console.ReadLine();
         Console.WriteLine("\n");
 
-        string day = DateTime.Now.DayOfWeek.ToString();
-        string time = DateTime.Now.ToString("HH:mm");
-        //Console.WriteLine(day);
+        //Console.WriteLine(day); just a test to se the format it printed out.
+        var time = DateTime.Now.ToString("HH:MM");
+        var day = DateTime.Now.DayOfWeek;
         int hour = DateTime.Now.Hour;
+
         if (hour < 6)
         {
             Console.WriteLine($"Go to bed! {name}\nIt's {day}, {time}");
@@ -27,7 +30,10 @@ public class TimeCheck
         {
             Console.WriteLine($"Good evening, {name}\nIt's {day}, {time}");
         }
-
+        else
+        {
+            Console.WriteLine("Unknown ERROR");
+        }
     }
 
 }
