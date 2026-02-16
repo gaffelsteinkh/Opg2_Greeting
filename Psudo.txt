@@ -1,0 +1,43 @@
+START
+run program
+
+Ask user for name
+
+program checks what the time is
+
+dependant on what the time is, specifically what hour of the the day we are on
+program chooses and print one of the four options
+
+if Hour >6 "go back to bed" or "you shouldnt be awake"
+meaning its gonna select option 1 between 00-06
+    if Hour is not between 00-06, it should try the next option
+if Hour >12 "good morning"
+    meaning option 2 is selected if its over 06 and between 12
+if Hour >16 "Good afternoon" or "good day"
+
+if Hour > 24 "good evening" 
+
+once the porgram figures out what time of day it is, throught hours.
+    it selects an display message and prints it
+
+it combines the users name with the time of day message
+    looking something like
+
+    INPUT: Alex 
+    Program run, time of day is 12:34 
+    Program displays "Good afternoon, Alex. it's Thursday 12:34"
+
+The Program then adds and prints a randomly selected (from the list) Quote from the QuoteOfTheDay selector
+
+displaying the quote after the initial greeting message.
+
+END
+
+
+TL;DR:
+
+INPUT: name
+TimeOfDay, destilled to Hour
+use hour to select option
+prints: 1/4 message options + Name + day + time
+QuoteOfTheDay runs and randomly selects and prints a quote 
